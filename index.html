@@ -3,20 +3,87 @@
   <head>
     <meta charset="utf-8">
     <title>Klassenspiegel</title>
-    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
   </head>
-  <body onload="getDropDown">
-    <!-- <header>
-      <h1>Klassenspiegel</h1>
-      <h3>Einfach. Schnell. Sicher. Innovativ.</h3>
-    </header> -->
-
-<p onclick="writeKlassen()">writeKlassen</p>
-
-
-
-    <script src="script/initialize.js" charset="utf-8"></script>
-    <script src="script/data.js" charset="utf-8"></script>
+  <body>
+    <form id="form" action="index.html" method="get">
+        <input id="name" type="text" name="name" value="" placeholder="Name">
+        <input id="klasse" type="text" name="klasse" value="" placeholder="Klasse">
+        <input id="subject" type="text" name="subject" value="" placeholder="Fach">
+        <input id="mark" type="text" name="mark" value="" placeholder="Note">
+        <button type="button" name="button" onclick="getInput()">Eintragen</button>
+    </form>
+    <br><br><br>
+    <div>
+      <table>
+        <tr>
+          <td style="font-weight: bolder">Name</td>
+          <td style="font-weight: bolder">Klasse</td>
+          <td style="font-weight: bolder">Fach</td>
+          <td style="font-weight: bolder">Noten</td>
+        </tr>
+        <tr>
+          <td id="td1"></td>
+          <td id="td2"></td>
+          <td id="td3"></td>
+          <td id="td4"></td>
+        </tr>
+        <tr>
+          <td id="td5"></td>
+          <td id="td6"></td>
+          <td id="td7"></td>
+          <td id="td8"></td>
+        </tr>
+        <tr>
+          <td id="td9"></td>
+          <td id="td10"></td>
+          <td id="td11"></td>
+          <td id="td12"></td>
+        </tr>
+        <tr>
+          <td id="td13"></td>
+          <td id="td14"></td>
+          <td id="td15"></td>
+          <td id="td16"></td>
+        </tr>
+        <tr>
+          <td id="td17"></td>
+          <td id="td18"></td>
+          <td id="td19"></td>
+          <td id="td20"></td>
+        </tr>
+        <tr>
+          <td id="td21"></td>
+          <td id="td22"></td>
+          <td id="td23"></td>
+          <td id="td24"></td>
+        </tr>
+        <tr>
+          <td id="td25"></td>
+          <td id="td26"></td>
+          <td id="td27"></td>
+          <td id="td28"></td>
+        </tr>
+        <tr>
+          <td id="td29"></td>
+          <td id="td30"></td>
+          <td id="td31"></td>
+          <td id="td32"></td>
+        </tr>
+        <tr>
+          <td id="td33"></td>
+          <td id="td34"></td>
+          <td id="td35"></td>
+          <td id="td36"></td>
+        </tr>
+        <tr>
+          <td id="td37"></td>
+          <td id="td38"></td>
+          <td id="td39"></td>
+          <td id="td40"></td>
+        </tr>
+      </table>
+    </div>
+    <script src="script/script.js" charset="utf-8"></script>
   </body>
 </html>
