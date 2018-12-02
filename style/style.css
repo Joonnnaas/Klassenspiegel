@@ -1,3 +1,17 @@
-/* body  {
-  font-family: 'Kalam', cursive;
-} */
+body    {
+  user-select: none;
+  font-family: 'Calibri';
+}
+input {
+  float: left;
+  margin: 0 1% 0 0;
+}
+#id {
+
+}
+table {
+  border: 2px solid black;
+}
+td {
+  width: 10%;
+}
