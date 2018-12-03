@@ -2,16 +2,25 @@ body    {
   user-select: none;
   font-family: 'Calibri';
 }
-input {
+select {
   float: left;
-  margin: 0 1% 0 0;
-}
-#id {
-
+  margin: 0 0.5% 0 0;
 }
 table {
   border: 2px solid black;
 }
 td {
   width: 10%;
+}
+#schueler1a {
+  display: block;
+}
+#schueler1b {
+  display: none;
+}
+#schueler2a {
+  display: none;
+}
+#schueler2b {
+  display: none;
 }
