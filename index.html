@@ -8,13 +8,12 @@
   <body>
     <form id="form" action="index.html" method="get">
 
-        <!-- <input id="klasse" type="text" name="klasse" value="" placeholder="Klasse"> -->
 
-        <select id="klasse" name="klassen">
+        <select id="klasse" name="klassen" onchange="getClass()">
           <option value="1ahitm">1ahitm</option>
-          <option value="1ahitm">1bhitm</option>
-          <option value="1ahitm">2ahitm</option>
-          <option value="1ahitm">2bhitm</option>
+          <option value="1bhitm">1bhitm</option>
+          <option value="2ahitm">2ahitm</option>
+          <option value="2bhitm">2bhitm</option>
         </select>
 
         <select id="schueler1a" name="schueler1a">
@@ -27,8 +26,8 @@
 
         <select id="schueler2a">
           <option value="Scholl Sebastian">Scholl Sebastian</option>
-          <option value="Fuchs Maximilian">Fuchs Maximilian</option>
-          <option value="Wiesinger Jona">Wiesinger Jonas</option>
+          <option value="Dorfinger Jonas">Dorfinger Jonas</option>
+          <option value="Wiesinger Jonas">Wiesinger Jonas</option>
           <option value="Edlinger Philipp">Edlinger Philipp</option>
           <option value="Ecker Quirin">Ecker Quirin</option>
       </select>
@@ -40,7 +39,7 @@
         <option value="Seiringer Julia">Seiringer Julia</option>
         <option value="Mair Paula">Mair Paula</option>
       </select>
-      
+
       <select id="schueler2b">
         <option value="Zopf Jonas">Zopf Jonas</option>
         <option value="Zauner Alexander">Zauner Alexander</option>
@@ -67,10 +66,11 @@
         <option value="5">Nicht Genügend</option>
       </select>
 
-        <!-- <input id="name" type="text" name="name" value="" placeholder="Name"> -->
-        <!-- <input id="subject" type="text" name="subject" value="" placeholder="Fach"> -->
-        <!-- <input id="mark" type="text" name="mark" value="" placeholder="Note"> -->
-        <button type="button" name="button" onclick="getInput()">Eintragen</button>
+      <!-- <input id="klasse" type="text" name="klasse" value="" placeholder="Klasse"> -->
+      <!-- <input id="name" type="text" name="name" value="" placeholder="Name"> -->
+      <!-- <input id="subject" type="text" name="subject" value="" placeholder="Fach"> -->
+      <!-- <input id="mark" type="text" name="mark" value="" placeholder="Note"> -->
+      <button type="button" name="button" onclick="getInput()">Eintragen</button>
     </form>
     <br><br><br>
     <div>
