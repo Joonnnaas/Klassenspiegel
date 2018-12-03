@@ -7,10 +7,69 @@
   </head>
   <body>
     <form id="form" action="index.html" method="get">
-        <input id="name" type="text" name="name" value="" placeholder="Name">
-        <input id="klasse" type="text" name="klasse" value="" placeholder="Klasse">
-        <input id="subject" type="text" name="subject" value="" placeholder="Fach">
-        <input id="mark" type="text" name="mark" value="" placeholder="Note">
+
+        <!-- <input id="klasse" type="text" name="klasse" value="" placeholder="Klasse"> -->
+
+        <select id="klasse" name="klassen">
+          <option value="1ahitm">1ahitm</option>
+          <option value="1ahitm">1bhitm</option>
+          <option value="1ahitm">2ahitm</option>
+          <option value="1ahitm">2bhitm</option>
+        </select>
+
+        <select id="schueler1a" name="schueler1a">
+          <option value="Müller Stefan">Müller Stefan</option>
+          <option value="Trauner Lukas">Trauner Lukas</option>
+          <option value="Hochhauser Felix">Hochhauser Felix</option>
+          <option value="Lengauer Valentin">Lengauer Valentin</option>
+          <option value="Schnell Nikolaus">Schnell Nikolaus</option>
+        </select>
+
+        <select id="schueler2a">
+          <option value="Scholl Sebastian">Scholl Sebastian</option>
+          <option value="Fuchs Maximilian">Fuchs Maximilian</option>
+          <option value="Wiesinger Jona">Wiesinger Jonas</option>
+          <option value="Edlinger Philipp">Edlinger Philipp</option>
+          <option value="Ecker Quirin">Ecker Quirin</option>
+      </select>
+
+      <select id="schueler1b">
+        <option value="Reichenfelser Ramona">Reichenfelser Ramona</option>
+        <option value="Schrattenecker Flora">Schrattenecker Flora</option>
+        <option value="Pamminger Victoria">Pamminger Victoria</option>
+        <option value="Seiringer Julia">Seiringer Julia</option>
+        <option value="Mair Paula">Mair Paula</option>
+      </select>
+      
+      <select id="schueler2b">
+        <option value="Zopf Jonas">Zopf Jonas</option>
+        <option value="Zauner Alexander">Zauner Alexander</option>
+        <option value="Schein Cornelia">Schein Cornelia</option>
+        <option value="Putz Simon">Putz Simon</option>
+        <option value="Noah Fassbender">Noah Fassbender</option>
+      </select>
+
+      <select id="subject">
+        <option value="am">Mathematik</option>
+        <option value="de">Deutsch</option>
+        <option value="en">Englisch</option>
+        <option value="sew">Softwareentwicklung</option>
+        <option value="syt">Systemtechnik</option>
+        <option value="nwt">Netwerktechnik</option>
+        <option value="medt">Medientechnik</option>
+      </select>
+
+      <select id="marks">
+        <option value="1">Sehr Gut</option>
+        <option value="2">Gut</option>
+        <option value="3">Befriedigend</option>
+        <option value="4">Genügend</option>
+        <option value="5">Nicht Genügend</option>
+      </select>
+
+        <!-- <input id="name" type="text" name="name" value="" placeholder="Name"> -->
+        <!-- <input id="subject" type="text" name="subject" value="" placeholder="Fach"> -->
+        <!-- <input id="mark" type="text" name="mark" value="" placeholder="Note"> -->
         <button type="button" name="button" onclick="getInput()">Eintragen</button>
     </form>
     <br><br><br>
