@@ -70,13 +70,14 @@ function printNewUser() {
 
     let newStudent = document.createElement('div');
 
+    const div = document.createElement('div');
+
     let markBox = document.createElement('div');
     let classBox = document.createElement('div');
     let subjectBox = document.createElement('div');
     let nameBox = document.createElement('div');
 
     let studentData = [klasse, name, subject, mark];
-
     let outputArr = [classBox, nameBox, subjectBox, markBox];
 
     newStudent.classList.add('outputField');
@@ -84,10 +85,51 @@ function printNewUser() {
     for (let i = 0; i < outputArr.length; i++) {
         outputArr[i].classList.add('output');
         outputArr[i].textContent = studentData[i];
+        newStudent.appendChild(outputArr[i]);
     }
 
-    for (let i = 0; i < outputArr.length; i++) {
-      newStudent.appendChild(outputArr[i]);
+    let override = false;
+
+    for (var i = 0; i < contentbox.childNodes.length; i++) {
+      if (contentbox.childNodes[i].childNodes[0].textContent == klasse
+          && contentbox.childNodes[i].childNodes[1].textContent == name
+          && contentbox.childNodes[i].childNodes[2].textContent == subject) {
+              contentbox.childNodes[i].childNodes[3].textContent = mark;
+              override = true;
+      }
     }
-    contentbox.appendChild(newStudent);
+    if (!override) {
+        contentbox.appendChild(newStudent);
+
+        klasse.textContent = klasseBox;
+        name.textContent = nameBox;
+        subject.textContent = subjectBox;
+        mark.textContent = markBox;
+
+        newStudent.appendChild(classBox);
+        newStudent.appendChild(nameBox);
+        newStudent.appendChild(subjectBox);
+        newStudent.appendChild(markBox);
+    }
+
+}
+
+function deleteRow() {
+    let rowsCount = parseInt(document.getElementById('rows').value);
+    let contentbox = document.getElementById('contentbox');
+    let errField = document.getElementById('errField');
+
+    rowsCount--;
+
+    if (rowsCount < 0 || rowsCount > contentbox.childElementCount - 1) {
+      errField.textContent = "Bitte wählen Sie eine gültige Zeile aus.";
+
+      setTimeout(function () {
+        errField.textContent = "";
+        rowsCount.value = 0;
+      }, 2500);
+
+    } else {
+      contentbox.removeChild(contentbox.childNodes[rowsCount]);
+    }
 }
