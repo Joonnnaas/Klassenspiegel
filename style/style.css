@@ -49,6 +49,9 @@ h3 {
 }
 form {
   margin: 3% 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 select {
   float: left;
@@ -107,4 +110,37 @@ select:hover {
 }
 select:focus {
   outline: none;
+}
+input {
+  outline: none;
+  border-radius: 10px;
+  border: gray 2px solid;
+  width: 1.5%;
+  padding: 0.125%;
+}
+#delRow {
+  float: left;
+  padding: 0.125%;
+  width: 4%;
+  border-radius: 10px;
+  outline: none;
+  margin: 0 0 0 0.45%;
+}
+legend {
+  font-family: 'Calibri';
+}
+input:hover {
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
+#error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: red;
+  font-family: 'Calibri';
 }
