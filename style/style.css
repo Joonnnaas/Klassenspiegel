@@ -1,17 +1,92 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body    {
   user-select: none;
-  font-family: 'Calibri';
+  min-width: 100%;
+  min-height: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+header {
+  background-color: #ebebeb;
+  width: 100%;
+  height: 200px;
+}
+h1 {
+  position: absolute;
+  top: 3.5%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-transform: uppercase;
+  font-family: Verdana, serif;
+  font-size: 5em;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+  1px 18px 6px rgba(16, 16, 16, 0.4),
+  1px 22px 10px rgba(16, 16, 16, 0.2),
+  1px 25px 35px rgba(16, 16, 16, 0.2),
+  1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+h3 {
+  position: absolute;
+  top: 20%;
+  right: 40%;
+  font-family: Verdana, serif;
+  text-transform: uppercase;
+  color: #6c6c69;
+}
+form {
+  margin: 3% 0 0 0;
 }
 select {
   float: left;
+  padding: 0.5%;
+  min-width: 10%;
   margin: 0 0.5% 0 0;
 }
-table {
-  border: 2px solid black;
-  text-align: center;
+option {
+  outline: none;
+  padding: 5px;
+  border-radius: 10px;
 }
-td {
-  width: 10%;
+button {
+  float: left;
+  padding: 0.5%;
+  width: 7%;
+  border-radius: 10px;
+  outline: none;
+}
+#contentbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.output {
+
+}
+.outputField {
+  width: 30%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
 }
 #schueler1a {
   display: block;
@@ -24,4 +99,14 @@ td {
 }
 #schueler2b {
   display: none;
+}
+select {
+  outline: none;
+  border-radius: 10px;
+}
+select:hover {
+  outline: none;
+}
+select:focus {
+  outline: none;
 }
