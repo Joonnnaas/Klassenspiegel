@@ -1,15 +1,5 @@
-let i = 1;
-
 function getInput() {
-  let name = getStudentName();
-  let klasse = document.getElementById('klasse').value;
-  let subject = document.getElementById('subject').value;
-  let mark = document.getElementById('mark').value;
-
-  alert(klasse);
-  alert(name);
-  alert(subject);
-  alert(mark);
+    printNewUser();
 }
 
 function getClass() {
@@ -68,4 +58,38 @@ function getStudentName() {
     name = document.getElementById('schueler2a').value;
   }
   return name;
+}
+
+function printNewUser() {
+    let name = getStudentName();
+    let klasse = document.getElementById('klasse').value;
+    let subject = document.getElementById('subject').value;
+    let mark = document.getElementById('mark').value;
+
+    let contentbox = document.getElementById('contentbox');
+
+    let newStudent = document.createElement('div');
+
+    let markBox = document.createElement('div');
+    let klassenBox = document.createElement('div');
+    let subjectBox = document.createElement('div');
+    let nameBox = document.createElement('div');
+
+    let studentData = [klasse, name, subject, mark];
+
+    let outputArr = [klassenBox, nameBox, subjectBox, markBox];
+
+    newStudent.classList.add('outputField');
+
+    for (let i = 0; i < outputArr.length; i++) {
+        outputArr[i].classList.add('output');
+        outputArr[i].textContent = studentData[i];
+    }
+
+    for (let i = 0; i < outputArr.length; i++) {
+      newStudent.appendChild(outputArr[i]);
+    }
+
+    contentbox.appendChild(newStudent);
+
 }
