@@ -71,13 +71,13 @@ function printNewUser() {
     let newStudent = document.createElement('div');
 
     let markBox = document.createElement('div');
-    let klassenBox = document.createElement('div');
+    let classBox = document.createElement('div');
     let subjectBox = document.createElement('div');
     let nameBox = document.createElement('div');
 
     let studentData = [klasse, name, subject, mark];
 
-    let outputArr = [klassenBox, nameBox, subjectBox, markBox];
+    let outputArr = [classBox, nameBox, subjectBox, markBox];
 
     newStudent.classList.add('outputField');
 
@@ -89,7 +89,5 @@ function printNewUser() {
     for (let i = 0; i < outputArr.length; i++) {
       newStudent.appendChild(outputArr[i]);
     }
-
     contentbox.appendChild(newStudent);
-
 }
