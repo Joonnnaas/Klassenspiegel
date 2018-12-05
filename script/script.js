@@ -120,8 +120,7 @@ function deleteRow() {
       errField.textContent = "Bitte wählen Sie eine gültige Zeile aus.";
 
       setTimeout(function () {
-        errField.textContent = "";
-        rowsCount.value = 0;
+        errField.textContent = '&nbsp';
       }, 2500);
 
     } else {
