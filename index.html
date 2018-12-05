@@ -71,10 +71,10 @@
         <option value="Nicht Beurteilt">Nicht Beurteilt</option>
       </select>
 
-      <button type="button" name="submit" onclick="getInput()">Eintragen</button>
+      <button type="button" name="submit" onclick="printNewUser()">Eintragen</button>
     </form>
 
-    <form>
+    <form style="margin-top: 1%;">
         <legend>Zeile löschen:</legend>
         <input id="rows" type="number">
         <button type="button" name="delRow" id="delRow" onclick="deleteRow()">Löschen</button>
@@ -84,7 +84,12 @@
         <p id="errField"></p>
       </div>
 
-    <br><br><br>
+    <div id="heading">
+          <div>Klasse</div>
+          <div>Name</div>
+          <div>Fach</div>
+          <div>Note</div>
+      </div>
 
     <div id="contentbox"></div>
     <script src="script/script.js" charset="utf-8"></script>

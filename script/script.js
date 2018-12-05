@@ -1,7 +1,3 @@
-function getInput() {
-    printNewUser();
-}
-
 function getClass() {
   let klassen = document.getElementById('klasse').value;
 
@@ -111,7 +107,6 @@ function printNewUser() {
         newStudent.appendChild(subjectBox);
         newStudent.appendChild(markBox);
     }
-
 }
 
 function deleteRow() {

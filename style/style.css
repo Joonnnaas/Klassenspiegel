@@ -48,7 +48,6 @@ h3 {
   color: #6c6c69;
 }
 form {
-  margin: 3% 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,11 +71,7 @@ button {
   outline: none;
 }
 #contentbox {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+
 }
 .output {
   font-family: 'Calibri';
@@ -143,4 +138,35 @@ input:focus {
 p {
   color: red;
   font-family: 'Calibri';
+}
+#heading {
+    box-sizing: border-box;
+    padding-right: 1vw;
+    margin-top: 10vh;
+    font-weight: bold;
+    font-size: 1.3vw;
+    font-family: 'Calibri';
+}
+#heading div {
+    width: 10vw;
+    margin: 0.1vw 0;
+    border-bottom: 1px solid black;
+}
+#contentbox {
+    overflow-y: scroll;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contentbox div, #heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+#contentbox div div {
+    width: 10vw;
+    margin: 0.1vw 0;
 }
